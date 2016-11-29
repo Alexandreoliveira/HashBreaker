@@ -1,0 +1,164 @@
+<!doctype html><html><head><meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>HashBreaker</title>
+
+<link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css">
+
+<link rel="stylesheet" href="assets/css/main.css">
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+
+<style type="text/css">li { cursor: pointer; cursor: hand; }</style>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script src="assets/lib/jquery/jquery.js"></script>
+
+<script src="assets/lib/bootstrap/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript">function viewTabela(){
+
+document.getElementById("grafico").style.display = "none";
+
+document.getElementById("tabela").style.display = "block";}
+
+function viewGrafico(){
+
+document.getElementById("grafico").style.display = "block";
+
+document.getElementById("tabela").style.display = "none";}
+
+google.charts.load("current", {packages:["corechart"]});
+
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+
+var data = google.visualization.arrayToDataTable([
+
+['Caracteres', 'Total'],
+
+['4 caracteres',30]]);
+
+var options = {pieHole: 0.4};
+
+var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+
+chart.draw(data, options);}
+
+$(document).ready(function(){
+var table = $('#tabHash').DataTable();
+table.row.add(['e2fc714c4727ee9395f324cd2e7f331f','abcd','00:00:00:062']).draw();
+table.row.add(['8343f6af1f2313770bea1954bbf3b3c6','@k@k','00:00:00:219']).draw();
+table.row.add(['229ae56bf5c7e60a1d0db30b423e6af6','asdh','00:00:00:328']).draw();
+table.row.add(['31be29a3d43701323c50de65d71af097','bFaG','00:00:01:297']).draw();
+table.row.add(['813c9e77c864c7cfc8b2ad9472c1dde6','#12M','00:00:01:344']).draw();
+table.row.add(['a4ab812db5e84ec4280a2067a0e009a8','$c03','00:00:01:657']).draw();
+table.row.add(['ca4abb07a2e12b9008c49953db2d0c0d','calC','00:00:01:734']).draw();
+table.row.add(['a9cec9eeae78b260c010bc84b79a2330','$*L0','00:00:02:172']).draw();
+table.row.add(['0a76d8749da8f67c37b6a3678d45ce9a','UniX','00:00:03:125']).draw();
+table.row.add(['2b8160cf839671250fc0dabac7cc1d4e','AdeS','00:00:03:532']).draw();
+table.row.add(['864a77ce17937bf629637a939b69da64','A(*6','00:00:04:101']).draw();
+table.row.add(['ff434d71061293390990711649b9dfd9','hgvk','00:00:05:194']).draw();
+table.row.add(['81dc9bdb52d04dc20036dbd8313ed055','1234','00:00:08:476']).draw();
+table.row.add(['9de37a0627c25684fdd519ca84073e34','mmmm','00:00:08:679']).draw();
+table.row.add(['01499346f9267b51e35095365aed4f15','H@0b','00:00:08:851']).draw();
+table.row.add(['5c55036d0b9dadec219f65c9d8d420c1','m@th','00:00:09:116']).draw();
+table.row.add(['4998654b7d255461cd5110d5dcbac05b','28@L','00:00:09:226']).draw();
+table.row.add(['9b82b6de580184657e6d95c4cfb2f337','JaV@','00:00:09:726']).draw();
+table.row.add(['3c2effe3f1157e5038b1dd0687d15957','n@@b','00:00:09:788']).draw();
+table.row.add(['b73fdaa1fb7669da760b49600c45d9be','okok','00:00:10:059']).draw();
+table.row.add(['f916e6a2ef1e57ca076f399823874f96','K0nG','00:00:10:856']).draw();
+table.row.add(['e9510081ac30ffa83f10b68cde1cac07','6666','00:00:11:919']).draw();
+table.row.add(['a284236e525bff59c8956266df0ac1ea','r&D&','00:00:12:449']).draw();
+table.row.add(['2f4278d6d27c99dc212f23093ae9ac8e','8ahd','00:00:12:794']).draw();
+table.row.add(['6af5f30627d3823099c2541d0b9326fc','82.l','00:00:13:200']).draw();
+table.row.add(['f38fef4c0e4988792723c29a0bd3ca98','8765','00:00:13:231']).draw();
+table.row.add(['e68d3c6431bf1e25eced5d26c301f68d','9844','00:00:13:950']).draw();
+table.row.add(['9cda986cec137d423863c2f9fca7c543','PoNg','00:00:13:966']).draw();
+table.row.add(['60bb1f9914c26fb929b724398e5d2f66','P@ss','00:00:14:372']).draw();
+table.row.add(['3a4d92a1200aad406ac50377c7d863aa','!@#$','00:00:14:716']).draw();
+});
+</script></head><body class="  ">
+
+<div class="bg-dark dk" id="wrap"><div id="top">
+
+<nav class="navbar navbar-inverse navbar-static-top">
+
+<div class="container-fluid">
+
+<header class="navbar-header">
+
+<img src="assets/img/logo.png" alt="">
+
+</header></div></nav><header class="head">
+
+</header></div><div id="left">
+
+<div class="media user-media bg-dark dker">
+
+<div class="user-media-toggleHover">
+
+<span class="fa fa-user"></span></div>
+
+<div class="user-wrapper bg-dark">
+
+<a class="user-link" href="">
+
+<img class="media-object img-thumbnail user-img" alt="User Picture" src="assets/img/hacker.jpg">
+
+</a><div class="media-body">
+
+<h5 class="media-heading">Hacker</h5>
+
+<ul class="list-unstyled user-info">
+
+<li>Data atual : <br><small><i class="fa fa-calendar"></i>&nbsp;29-11-2016</small>
+
+</li></ul></div></div></div>
+
+<ul id="menu" class="bg-dark">
+
+<li class="nav-header">Menu</li>
+
+<li class="nav-divider"></li>
+
+<li class="selected"><a onclick="viewGrafico()"><i class="fa fa-dashboard"></i>
+
+<span class="link-title">&nbsp;Gráfico</span></a></li>
+
+<li class=""><a onclick="viewTabela()">
+
+<i class="fa fa-dashboard"></i><span class="link-title">&nbsp;Lista</span>
+
+</a></li></ul></div><div id="content"><div class="outer">
+
+<div class="inner bg-light lter" id="grafico"><div class="col-lg-12">
+
+<h1>Gráfico de Hashs Quebradas</h1>
+
+<div id="donutchart" style="width: 100%; height: 500px;"></div>
+
+</div></div><div class="inner bg-light lter" id="tabela" style="display: none"><div class="col-lg-12">
+
+<h1>Lista de Hashs Quebradas</h1>
+
+<div style="width: 100%; height: 500px;">
+
+<table id="tabHash" class="display" width="100%" cellspacing="0">
+<thead><tr><th>Hash</th><th>Senha</th><th>Tempo</th></tr></thead>
+<tfoot><tr><th>Hash</th><th>Senha</th><th>Tempo</th></tr></tfoot></table></div>
+</div></div></div></div></div>
+
+<footer class="Footer bg-dark dker">
+
+<p>2016 &copy; HashBreaker</p>
+
+</footer></body></html>
+
